@@ -12,7 +12,9 @@ from model.encoder import Encoder
 from model.decoder import Decoder
 from model.warm_up_decay_schedule import WarmupThenDecaySchedule
 
-# external
+
+
+# external  sdf 
 import tensorflow as tf
 import numpy as np
 import matplotlib.pyplot as plt

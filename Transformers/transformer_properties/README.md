@@ -32,6 +32,6 @@ python main.py --option train --n_epochs 25 --d_model 256 --n_layers 4 --n_heads
 ```
 ### Validation
 ```
-python main.py --option train --n_epochs 25 --d_model 128 256 512 --n_layers 4 6 --n_heads 4 6 8 --dropout 0.1 0.15 0.2 --activation_func relu gelu --ff_dim 768 1024 2048 --optimizer_fn adam 0.0001 0.9 0.99 1e-08
+python main.py --option validation --n_epochs 25 --d_model 128 256 512 --n_layers 4 6 --n_heads 4 6 8 --dropout 0.1 0.15 0.2 --activation_func relu gelu --ff_dim 768 1024 2048 --optimizer_fn adam 0.0001 0.9 0.99 1e-08
 ```
 

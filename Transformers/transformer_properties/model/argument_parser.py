@@ -37,12 +37,6 @@ def argparser():
         help='Rate of test set')
 
     parser.add_argument(
-        '--threshold_min',
-        type=float,
-        default=6,
-        help='Minimum number of functional groups where masking considers FGs')
-
-    parser.add_argument(
         '--n_epochs',
         type=int,
         default=25,

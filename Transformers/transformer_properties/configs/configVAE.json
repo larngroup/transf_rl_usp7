@@ -1,5 +1,0 @@
-{
-	"optimizer": "adam",
-	"seed": 56,
-	"importance_op": "mean"
-}

@@ -8,8 +8,8 @@
 
 ## Data Availability
 ### Molecular Generator
-- **train_chembl_22_clean_1576904_sorted_std_final: Train set extracted from ChEMBL 22
-- **test_chembl_22_clean_1576904_sorted_std_final: Test set extracted from ChEMBL 22
+- **train_chembl_22_clean_1576904_sorted_std_final:** Train set extracted from ChEMBL 22
+- **test_chembl_22_clean_1576904_sorted_std_final:** Test set extracted from ChEMBL 22
 ### USP7 inhibitors
 - **usp7_new.smi:** pIC50 against USP7 + SMILES from ChEMBL 
 - **usp_inhibitors_1.xlsx:** known USP7 inhibitors collected from the state-of-art 

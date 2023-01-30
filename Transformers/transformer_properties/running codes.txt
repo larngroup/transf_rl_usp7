@@ -1,4 +1,0 @@
--- final_model ---
-python main.py --option train --n_epochs 100 --d_model 256 --n_layers 4 --n_heads 4 --dropout 0.1 --activation_func gelu --ff_dim 1024 --optimizer_fn adam 0.0001 0.9 0.99 1e-08
-
-python main.py --option train --n_epochs 6 --d_model 256 --n_layers 4 --n_heads 4 --dropout 0.1 --activation_func gelu --ff_dim 1024 --optimizer_fn adam 0.0001 0.9 0.99 1e-08

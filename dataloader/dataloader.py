@@ -152,7 +152,8 @@ class DataLoader:
                 smi = Chem.MolToSmiles(mol)
                 all_mols.append(smi)
             except:
-                print("Invalid molecule")
+                next
+                
         
         return all_mols
     

@@ -546,5 +546,40 @@ class generation_process(BaseModel):
         
         Utils.plot_fg(dict_known_normalized,10,'known')
         Utils.plot_fg(dict_generated_normalized,10,'generated')
+                
+        td = 0
+   
+        fps_A = []
+        for i, row in enumerate(generated_hits):
+            try:
+                # print(i,row)
+                mol = Chem.MolFromSmiles(row)
+                fps_A.append(AllChem.GetMorganFingerprint(mol, 3))
+            except:
+                print('ERROR: Invalid SMILES!')
+    
+        
+        fps_B = []
+        for j, row in enumerate(known_inhibitors):
+            try:
+                mol = Chem.MolFromSmiles(row)
+                fps_B.append(AllChem.GetMorganFingerprint(mol, 3))
+            except:
+                print('ERROR: Invalid SMILES!') 
+        
+        td_all = []
+        for jj in range(len(fps_A)):
+            for xx in range(len(fps_B)):
+                ts = 1 - DataStructs.TanimotoSimilarity(fps_A[jj], fps_B[xx]) 
+                td_all.append(ts)
+         
+        td_all_arr = np.array(td_all,dtype='float64').reshape((-1,))    
+        sns.axes_style("darkgrid")
+        ax = sns.kdeplot(td_all_arr, shade=True,color = 'g')
+        ax.set(xlabel='Tanimito Similarity',
+               title='Distribution of TS between the generated compounds and known inhibitors ')
+        plt.show() 
+
+                                    
 
   

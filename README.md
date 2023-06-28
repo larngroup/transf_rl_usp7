@@ -31,19 +31,19 @@
 Codes to run the experiments described in the research article with the pre-trained Generator, Transformers and Predictors models.
 ### MLM (best approach)
 ```
-python main.py --option mlm --upper_pic50_thresh 6.5 --lower_pic50_thresh 6.0 --batch_size 7 --top_tokens_rate 0.33 --reward_factor 3 --range_pic50 [0.48,1.15] --range_sas [1.4,3.75] --weights [0.5,0.5] --optimizer_fn adam 0.0005 0.9 0.999 1e-08
+python main.py --option mlm --upper_pic50_thresh 6.5 --lower_pic50_thresh 6.0 --batch_size 7 --top_tokens_rate 0.33 --reward_factor 3 --optimizer_fn adam 0.0005 0.9 0.999 1e-08
 ```
 ### Experiment I - MLM
 ```
-python main.py --option mlm_exp1 --upper_pic50_thresh 6.5 --lower_pic50_thresh 6.0 --batch_size 7 --top_tokens_rate 0.33 --reward_factor 3 --range_pic50 [0.48,1.15] --range_sas [1.4,3.75] --weights [0.5,0.5] --optimizer_fn adam 0.0005 0.9 0.999 1e-08
+python main.py --option mlm_exp1 --upper_pic50_thresh 6.5 --lower_pic50_thresh 6.0 --batch_size 7 --top_tokens_rate 0.33 --reward_factor 3 --optimizer_fn adam 0.0005 0.9 0.999 1e-08
 ```
 ### Experiment II - MLM
 ```
-python main.py --option mlm_exp2 --upper_pic50_thresh 6.5 --lower_pic50_thresh 6.0 --batch_size 7 --top_tokens_rate 0.33 --reward_factor 3 --range_pic50 [0.48,1.15] --range_sas [1.4,3.75] --weights [0.5,0.5] --optimizer_fn adam 0.0005 0.9 0.999 1e-08
+python main.py --option mlm_exp2 --upper_pic50_thresh 6.5 --lower_pic50_thresh 6.0 --batch_size 7 --top_tokens_rate 0.33 --reward_factor 3 --optimizer_fn adam 0.0005 0.9 0.999 1e-08
 ```
 ### Standard
 ```
-python main.py --option standard --upper_pic50_thresh 6.0 --lower_pic50_thresh 5.5 --batch_size 7 --top_tokens_rate 0.2 --reward_factor 3 --range_pic50 [0.48,1.1] --range_sas [1.4,3.75] --weights [0.5,0.5] --optimizer_fn adam 0.0005 0.9 0.999 1e-08
+python main.py --option standard --upper_pic50_thresh 6.0 --lower_pic50_thresh 5.5 --batch_size 7 --top_tokens_rate 0.2 --reward_factor 3 --optimizer_fn adam 0.0005 0.9 0.999 1e-08
 ```
 ### Experiment I - Standard
 ```

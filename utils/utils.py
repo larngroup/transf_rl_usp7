@@ -1049,7 +1049,7 @@ class Utils:
             generated_smiles['sas'] = prediction_sas
             generated_smiles['mols_obj'] = mols_list
         except:
-            print('ERROR: invalid molecular evaluatioin')
+            print('ERROR: invalid molecular evaluation')
 
         unique_smiles = list(np.unique(smiles_sanitized))
         percentage_unq = (len(unique_smiles)/len(smiles_sanitized))*100
